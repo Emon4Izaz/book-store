@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manga Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="mainbg">
+        <div class="header-container">
+          <div class="nav">
+            <ul>
+              <li style="float: left"><a href="">MANGA STORE</a></li>
+              <li>
+                <a href="#" onclick="openFormLogin();closeFormReg()">Login</a>
+              </li>
+              <li>
+                <a href="#" onclick="openFormReg();closeFormLogin()">Sign Up</a>
+              </li>
+              <li><a href="">Search</a></li>
+            </ul>
+            <hr />
+          </div>
+
+          <div class="header-book">
+            <div><img src="image/onepunch.png" alt="" /></div>
+            <div class="header-book-title">
+              <div>
+                <h1>
+                  Buy Orginal Manga , Comic and Light Novel In Best Price!
+                </h1>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel,
+                  impedit perferendis neque nostrum libero iusto in aut ad
+                  deleniti sed saepe, minus eveniet facere? Vero soluta fugit
+                  commodi totam dolores.
+                </p>
+              </div>
+              <div>
+                <a href="#" class="header-button">VIEW ALL BOOKS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main containt -->
+    <div class="container">
+      <div class="type"><h3>BESTSELLERS</h3></div>
+      <div class="books">
+        <div class="cover">
+          <a href=""
+            ><img src="image/manga/m1.jpg" alt="manga" />
+            <p>The Promised Neverland</p></a
+          >
+        </div>
+        <div class="cover">
+          <a href=""
+            ><img src="image/manga/m2.jpg" alt="manga" />
+            <p>Jujutsu Kaisen</p></a
+          >
+        </div>
+        <div class="cover">
+          <a href=""
+            ><img src="image/manga/m3.jpg" alt="manga" />
+            <p>Demon Slayer</p></a
+          >
+        </div>
+        <div class="cover">
+          <a href=""
+            ><img src="image/manga/m4.jpg" alt="manga" />
+            <p>My Home Hero</p></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- login -->
+    <div class="form-popup" id="myLogin">
+      <form action="/action" class="form-container">
+        <button type="button" class="btn cancel" onclick="closeFormLogin()">
+          X
+        </button>
+        <h1>Login</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" />
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" />
+
+        <button type="submit" class="btn">Login</button>
+      </form>
+    </div>
+    <!-- register -->
+    <div class="form-popup" id="myReg">
+      <form action="/action" class="form-container">
+        <button type="button" class="btn cancel" onclick="closeFormReg()">
+          X
+        </button>
+        <h1>Register</h1>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" />
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" />
+
+        <label for="psw"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" />
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+    <!-- script -->
+    <script>
+      function openFormLogin() {
+        document.getElementById("myLogin").style.display = "block";
+      }
+
+      function closeFormLogin() {
+        document.getElementById("myLogin").style.display = "none";
+      }
+      function openFormReg() {
+        document.getElementById("myReg").style.display = "block";
+      }
+
+      function closeFormReg() {
+        document.getElementById("myReg").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
